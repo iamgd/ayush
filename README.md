@@ -1,5 +1,3 @@
-# Login-Registration-form-with-PhpMailer-Password-Reset
-- This project is a login and register form using PHPMailer forgot-password reset, which sends a code reset in user's email. It also has a search button that allows you to check whether one is registered or not. It uses Javascript for form validation and Php for server connection.
-- Use the userform.sql file, run it directly on the xampp database to get the actual tables for this code.
-- Ensure you use an active gmail account.
-- Incase the email  mailtest8782@gmail.com on mail.php file fails to send code, you can create yours by heading to manage my account (your email account) then security and finally on the 2 step verification and app passwords section. Ensure the toggle button on 2 step verification is on then generate a password which google will show you. Copy the password into your mail.php file in the password area. 
+The AYUSH Hub unites startups, investors, and government entities in a centralized platform for AYUSH projects. It features dedicated dashboards for each group, offering access to AYUSH schemes, resources, and a Product Page for direct purchases. It simplifies networking, shopping, and collaboration by providing a seamless space where users can connect, explore, and team up effortlessly.
+
+This vibrant platform acts as a virtual hangout, fostering effortless interactions among startups, investors, and government associates. Tailored dashboards facilitate easy exploration of AYUSH plans, resources, and products, enhancing connections and enabling direct purchases. The AYUSH Hub redefines collaboration, serving as a convenient space where networking, teamwork, and AYUSH product acquisition blend seamlessly. 
