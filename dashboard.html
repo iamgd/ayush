@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Title Page-->
+    <title>Dashboard of Ayush Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Fontfaces CSS-->
+    <link href="resources/css/font-face.css" rel="stylesheet" media="all">
+    <link href="resources/css/font-awesome-4.7/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="resources/css/font-awesome-5/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="resources/css/mdi-font/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="resources/css/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="resources/css/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="resources/css/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="resources/css/wow/animate.css" rel="stylesheet" media="all">
+    <link href="resources/css/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="resources/css/slick/slick.css" rel="stylesheet" media="all">
+    <link href="resources/css/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="resources/css/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="resources/css/theme.css" rel="stylesheet" media="all">
+
+    <!--     Controllers           -->
+    <script src="resources/js/jquery/jquery-3.2.1.min.js"></script>
+
+    <script src="resources/js/angularjs/angular.min.js"></script>
+    <script src="resources/js/angularjs/angular-animate.js"></script>
+    <script src="resources/js/chartjs/Chart.bundle.min.js"></script>
+    <script src="resources/js/angularjs/angular-chart.min.js"></script>
+    <script src="resources/js/angularjs/angular-route.js"></script>
+    <script src="resources/js/angularjs/angular-sanitize.js"></script>
+    <script src="resources/js/angularjs/ui-bootstrap-tpls-3.0.6.min.js"></script>
+
+
+    "></script>
+    <script src="resources/controller/healthinfrastructurecontroller.js"></script>
+    <script src="resources/js/main.js"></script>
+
+</head>
+
+<body class="animsition" >
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="resources/images/moaemblem.jpg" alt="Ministry of Ayush" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="active">
+                            <a href="dashboard.html">
+                                <i class="fas fa-tachometer-alt"></i>Home</a>
+
+                        </li>
+                        <li>
+                            <a href="manage-user.php">
+                                <i class="fas fa-chart-bar"></i>Manage User</a>
+                               
+                        </li>
+                        <li>
+                            <a href="manage-user.php">
+                                <i class="fas fa-chart-bar"></i>Manage Government Agencies</a>
+                              
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo" style="background:white;">
+                <a href="#">
+                    <img src="resources/images/moaemblem.jpg" alt="Ministry of Ayush" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active">
+                            <a href="dashboard.html">
+                                <i class="fas fa-tachometer-alt"></i>Home</a>
+
+                        </li>
+                        <li>
+                            <a href="manage-user.php">
+                                <i class="fas fa-user"></i>Manage User</a>
+                        </li>
+                       
+                        <li>
+                            <a href="#!iecactivitiesdashboard">
+                                <i class="fa fa-handshake-o" aria-hidden="true"></i>Manage Government Agencies</a>
+                        </li>
+                        <li>
+                            <a href="#!health_infrastructure">
+                                <i class='fas fa-hospital'></i>Health Infrastructure</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <!--<span style="font-size: 30px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;">Progress of Flagship projects.</span> -->
+                            <span style="font-size: 30px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;">Dashboard of Ayush Portal.</span>
+                            
+                                            
+                            <div class="account-dropdown__footer">
+                                                <a href="logout.php">
+                                                    <i class="fa fa-user"></i>Logout</a>
+                                            </div> 
+                            
+                        </div>
+                    </div>
+            </header>
+            
+
+            <div class="main-content" id="main_content_id">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <ng-view></ng-view>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <div style="font-size: 24px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">Total Number of users</span>
+                                        </div>
+                                        <canvas id="doughnut" class="chart chart-doughnut"  chart-data="data" chart-labels="labels"></canvas> 
+                                        <div style="font-size: 18px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">Total Capacities 140689 </span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <div style="font-size: 20px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">National Ayush Mission</span>
+                                        </div>
+                                        
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <!-- <div style="font-size: 18px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center;">Total Ayush HWC Setup {{total_hwc}} accross the country</div> -->
+                                                    <!-- <canvas id="doughnut" class="chart chart-doughnut"  chart-data="data" chart-labels="labels" style="height: 200px;"></canvas> -->
+                                                    <canvas id="no_of_hwc"></canvas>
+                                                    <div style="font-size: 18px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center"> </div>
+                        
+                                                    <div style="text-align:right"><a href="#!namdashboard">Read More....</a></div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <!-- <div style="font-size: 18px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">Status of Ayush HWC </div> -->
+                                                    <!-- <canvas id="sales-chart"></canvas> -->
+                                                    <canvas id="hwc_performance"></canvas>
+                                                    <div style="font-size: 18px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">Recurring V/S Non-Recurring</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <div style="font-size: 20px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">Ayurgyan Scheme</span>
+                                        </div>
+                                        <!-- <canvas id="sales-chart"></canvas> -->
+                        
+                                        <!-- <canvas id="hwc_performance"></canvas> -->
+                        
+                                        <!--<div style="font-size: 16px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:justify">
+                                        The Union Cabinet has taken decision on 30th Jan, 2019 that at least 12,500 Health and Wellness Centres (HWCs) under Ayushman Bharat will be upgraded by the Ministry of Ayush. The Union Cabinet during its meeting on 20th March, 2020 has approved the proposal to operationalise these 12,500 Ayush HWCs through States/UTs in Centrally Sponsored Scheme mode and under the broad umbrella of National Ayush Mission (NAM) in a phased manner by  2023-24.
+                                        </div> -->
+                                        <!--<span>&#x2022; On-Boarded - 12500</span><br>-->
+                                        <!-- <span>&#x2022; Functional - 5936</span> -->
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <canvas id="cme_chart" style="width:100%;max-width:600px"></canvas>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <canvas id="emr_chart" style="width:100%;max-width:600px"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <div style="font-size: 20px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center"> Yearly trends of Promotional activities.</span>
+                                        </div>
+                                        <!-- <canvas id="sales-chart"></canvas> -->
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-8"><canvas id="iec_performance"></canvas></div>
+                                                <div class="col-md-2"><span style="text-align:bottom;"></span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12" style="text-align:right;">
+                                                    <a href="#!/iecactivitiesdashboard">Read More</a>
+                                                </div>
+                                            </div>
+                                            <!-- <div style="font-size: 16px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:justify"> -->
+                                            <!-- The Union Cabinet has taken decision on 30th Jan, 2019 that at least 12,500 Health and Wellness Centres (HWCs) under Ayushman Bharat will be upgraded by the Ministry of Ayush. The Union Cabinet during its meeting on 20th March, 2020 has approved the proposal to operationalise these 12,500 Ayush HWCs through States/UTs in Centrally Sponsored Scheme mode and under the broad umbrella of National Ayush Mission (NAM) in a phased manner by  2023-24. -->
+                                            <!-- </div> -->
+                                            <!-- <span>&#x2022; On-Boarded - 12500</span><br> -->
+                                            <!-- <span>&#x2022; Functional - 5936</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <!--<div class="row"> -->
+                        <!--	<div class="col-lg-1"></div> -->
+                        <!--	<div class="col-lg-10"> -->
+                        <!--        <div class="au-card m-b-30"> -->
+                        <!--            <div class="au-card-inner"> -->
+                        <!--                <div style="font-size: 20px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">National Medicinal Plantation Board</span> </div>  -->
+                        <!-- <canvas id="sales-chart"></canvas> -->
+                        
+                        <!-- <canvas id="hwc_performance"></canvas> -->
+                        
+                        <!-- <div style="font-size: 16px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:justify"> -->
+                        <!-- The Union Cabinet has taken decision on 30th Jan, 2019 that at least 12,500 Health and Wellness Centres (HWCs) under Ayushman Bharat will be upgraded by the Ministry of Ayush. The Union Cabinet during its meeting on 20th March, 2020 has approved the proposal to operationalise these 12,500 Ayush HWCs through States/UTs in Centrally Sponsored Scheme mode and under the broad umbrella of National Ayush Mission (NAM) in a phased manner by  2023-24. -->
+                        <!-- </div> -->
+                        <!-- <span>&#x2022; On-Boarded - 12500</span><br> -->
+                        <!-- <span>&#x2022; Functional - 5936</span> -->
+                        <!--			</div> -->
+                        <!--		</div>     -->
+                        <!--    </div>   -->
+                        <!--	<div class="col-lg-1"></div> -->
+                        <!--</div> -->
+                        <!-- <div class="row"> -->
+                        <!--	<div class="col-lg-1"></div> -->
+                        <!--	<div class="col-lg-10">  -->
+                        <!--        <div class="au-card m-b-30">  -->
+                        <!--            <div class="au-card-inner"> -->
+                        <!--                <div style="font-size: 20px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">IEC Scheme</span> </div> -->
+                        <!-- <canvas id="sales-chart"></canvas> -->
+                        
+                        <!-- <canvas id="hwc_performance"></canvas> -->
+                        
+                        <!--				<div style="font-size: 16px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:justify">
+                                        The Union Cabinet has taken decision on 30th Jan, 2019 that at least 12,500 Health and Wellness Centres (HWCs) under Ayushman Bharat will be upgraded by the Ministry of Ayush. The Union Cabinet during its meeting on 20th March, 2020 has approved the proposal to operationalise these 12,500 Ayush HWCs through States/UTs in Centrally Sponsored Scheme mode and under the broad umbrella of National Ayush Mission (NAM) in a phased manner by  2023-24.
+                                        </div>
+                                        <span>&#x2022; On-Boarded - 12500</span><br>
+                                        <span>&#x2022; Functional - 5936</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div> -->
+                        <!--<div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <div style="font-size: 20px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">Medicinal Plantation</span> </div> -->
+                        <!-- <canvas id="sales-chart"></canvas> -->
+                        
+                        <!-- <canvas id="hwc_performance"></canvas> -->
+                        
+                        <!--				<div style="font-size: 16px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:justify">
+                                        The Union Cabinet has taken decision on 30th Jan, 2019 that at least 12,500 Health and Wellness Centres (HWCs) under Ayushman Bharat will be upgraded by the Ministry of Ayush. The Union Cabinet during its meeting on 20th March, 2020 has approved the proposal to operationalise these 12,500 Ayush HWCs through States/UTs in Centrally Sponsored Scheme mode and under the broad umbrella of National Ayush Mission (NAM) in a phased manner by  2023-24.
+                                        </div>
+                                        <span>&#x2022; On-Boarded - 12500</span><br>
+                                        <span>&#x2022; Functional - 5936</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div> -->
+                        <!--<div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <div style="font-size: 20px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:center">IEC Scheme</span> </div> -->
+                        <!-- <canvas id="sales-chart"></canvas> -->
+                        
+                        <!-- <canvas id="hwc_performance"></canvas> -->
+                        
+                        <!--				<div style="font-size: 16px;font-family: Merriweather, serif; font-style: italic; line-height: 1.5;text-align:justify">
+                                        The Union Cabinet has taken decision on 30th Jan, 2019 that at least 12,500 Health and Wellness Centres (HWCs) under Ayushman Bharat will be upgraded by the Ministry of Ayush. The Union Cabinet during its meeting on 20th March, 2020 has approved the proposal to operationalise these 12,500 Ayush HWCs through States/UTs in Centrally Sponsored Scheme mode and under the broad umbrella of National Ayush Mission (NAM) in a phased manner by  2023-24.
+                                        </div>
+                                        <span>&#x2022; On-Boarded - 12500</span><br>
+                                        <span>&#x2022; Functional - 5936</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div> -->
+                        <!-- End Capacity of HWCs in a week.          -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright @ Ministry of Ayush <a href="https://www.ayush.gov.in">Ministry of Ayush</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            </div>
+            <!-- END PAGE CONTAINER-->
+
+        </div>
+
+        <!-- Jquery JS-->
+        <script src="resources/js/jquery/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="resources/js/bootstrap-4.1/popper.min.js"></script>
+        <script src="resources/js/bootstrap-4.1/bootstrap.min.js"></script>
+        <!-- Vendor JS       -->
+        <script src="resources/js/slick/slick.min.js"></script>
+        <script src="resources/js/wow/wow.min.js"></script>
+        <script src="resources/js/animsition/animsition.min.js"></script>
+        <script src="resources/js/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+        <script src="resources/js/counter-up/jquery.waypoints.min.js"></script>
+        <script src="resources/js/counter-up/jquery.counterup.min.js"></script>
+        <script src="resources/js/circle-progress/circle-progress.min.js"></script>
+        <script src="resources/js/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <!-- <script src="resources/js/chartjs/Chart.bundle.min.js"></script> -->
+        <script src="resources/js/select2/select2.min.js"></script>
+
+        <!-- Main JS-->
+        <script src="resources/js/main.js"></script>
+
+
+</body>
+
+</html>
+<!-- end document-->

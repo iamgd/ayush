@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #bfd5ec;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #bfd5ec;
+    font-size: 60px;
+}
+    .end-text{
+            background-color: #fff;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 2rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+    }
+
+    .end-text p{
+    color: #111;
+    text-transform: capitalize;
+}
+</style>
+</head>
+<body>
+
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+           <h2 class="logo"><img src="./images/moaemblem.jpg" width="230" height="80" alt="AYUSH"></h2> 
+           
+        </div>
+           
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schemes.html">Schemes</a></li>
+                <li><a href="login.php">Login</a></li>               
+                <li><a href="products.html">Products</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type to text">
+            <a href="#"><button class="btn">Search</button></a>
+        </div> 
+    </div>
+
+    <div class="content">
+        <h1>Ayush - Startup <br><span>Portal</span></h1>
+        <p class="par">The "Startup-AYUSH Portal" is a groundbreaking digital initiative that seeks to provide a comprehensive and user-friendly online platform for the AYUSH community, which encompasses Ayurveda, Yoga, Naturopathy, Unani, Siddha, and Homoeopathy. <br> The primary focus of this platform is on the rapidly evolving fields of MedTech, BioTech, and HealthTech, where innovation and technology are driving significant advancements in healthcare and wellness.</p>
+       <!-- <?php echo $fetch_info['username'] ?> -->
+    <form id="form" method="post" action="find.php"> 
+        
+       
+    </form>
+
+    <button class="cn"><a href="login.php">Login</a></button>
+    </div>
+</div>
+
+<div class="end-text">
+    <p>Copyright © @Ayush. All Rights Reserved. Designed By GD.</p>
+</div>
+</body>
+</html>
